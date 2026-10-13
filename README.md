@@ -1,33 +1,30 @@
-# KytyPS5
+# KytyPS5-optimized
 
-[![Build KytyPS5 (Windows)](https://img.shields.io/github/check-runs/KytyPS5/KytyPS5/main?nameFilter=Build%20KytyPS5%20%28Windows%29&label=Build%20KytyPS5%20%28Windows%29)](https://github.com/KytyPS5/KytyPS5/actions/workflows/build.yml)
-[![Build KytyPS5 (Linux)](https://img.shields.io/github/check-runs/KytyPS5/KytyPS5/main?nameFilter=Build%20KytyPS5%20%28Linux%29&label=Build%20KytyPS5%20%28Linux%29)](https://github.com/KytyPS5/KytyPS5/actions/workflows/build.yml)
-[![Build KytyPS5 (macOS)](https://img.shields.io/github/check-runs/KytyPS5/KytyPS5/main?nameFilter=Build%20KytyPS5%20%28macOS%29&label=Build%20KytyPS5%20%28macOS%29)](https://github.com/KytyPS5/KytyPS5/actions/workflows/build.yml)
+[![Build KytyPS5 (Windows)](https://img.shields.io/github/check-runs/john-rm/KytyPS5-optimized/main?nameFilter=Build%20KytyPS5%20%28Windows%29&label=Build%20KytyPS5%20%28Windows%29)](https://github.com/john-rm/KytyPS5-optimized/actions/workflows/build.yml)
+[![Build KytyPS5 (Linux)](https://img.shields.io/github/check-runs/john-rm/KytyPS5-optimized/main?nameFilter=Build%20KytyPS5%20%28Linux%29&label=Build%20KytyPS5%20%28Linux%29)](https://github.com/john-rm/KytyPS5-optimized/actions/workflows/build.yml)
+[![Build KytyPS5 (macOS)](https://img.shields.io/github/check-runs/john-rm/KytyPS5-optimized/main?nameFilter=Build%20KytyPS5%20%28macOS%29&label=Build%20KytyPS5%20%28macOS%29)](https://github.com/john-rm/KytyPS5-optimized/actions/workflows/build.yml)
+
 [![Platform](https://img.shields.io/badge/platform-Windows%20x64%20%7C%20Linux%20x64%20%7C%20macOS%20x86__64-0078D4.svg)](#system-requirements)
 [![Status](https://img.shields.io/badge/status-active%20development-orange.svg)](#current-status)
 [![License](https://img.shields.io/badge/license-GPL--2.0-blue.svg)](LICENSE)
 
-**[Weekly updates](https://github.com/KytyPS5/KytyPS5/discussions/862)** — game progress, recent fixes, and ongoing development.
+KytyPS5-optimized is a free and open-source PlayStation 5 translation layer written in C++ for Windows 
+and Linux, with experimental macOS support. It is based on [KytyPS5](https://github.com/KytyPS5/KytyPS5) 
+(which is based on a heavily modified version of [Kyty](https://github.com/InoriRus/Kyty)).
+The project is in active development, and behavior can change significantly between builds.
 
-**[Development on Discord](https://discord.gg/UNrkMqGaBg)** — KytyPS5 development.
-
-KytyPS5 is a free and open-source PlayStation 5 translation layer written in C++ for Windows
-and Linux, with experimental macOS support. It is based on a heavily modified version of
-[Kyty](https://github.com/InoriRus/Kyty). The project is in active development, and behavior
-can change significantly between builds.
+This fork of [KytyPS5](https://github.com/KytyPS5/KytyPS5) focuses on optimizing the backend, aimed at making games run at playable conditions.
 
 > [!IMPORTANT]
-> KytyPS5 is not affiliated with Sony Interactive Entertainment or PlayStation. The project does
+> KytyPS5 and KytyPS5-optimized is not affiliated with Sony Interactive Entertainment or PlayStation. The project does
 > not distribute games or copyrighted system software. Use only game files that you have obtained
 > legally.
 
 ## Current Status
 
-KytyPS5 can boot 2D and 3D games, including titles built with Unreal Engine
+[KytyPS5](https://github.com/KytyPS5/KytyPS5) can boot 2D and 3D games, including titles built with Unreal Engine
 4/5, Unity, and custom engines. External low-level emulation modules are neither required nor
 planned.
-
-Development is currently focused on expanding game compatibility and improving boot reliability.
 
 Windows and Linux are the primary target platforms and receive the most testing.
 
@@ -84,10 +81,6 @@ or graphical glitches, so please include the version you tested when reporting a
 
 Testing games and submitting detailed bug reports are useful ways to contribute. Search existing
 issues first, then use the **Game Emulation Status Report** template and attach the complete log file.
-
-**Pull requests for general fixes, architectural changes, or refactoring that do not address a concrete bug or launch problem in a specific game will be automatically closed.**
-
-**Large, unfocused commits or pull requests that bundle unrelated changes without a clear purpose or game-related benefit will also be automatically closed.**
 
 Keep each PR focused. Name the affected game, describe the exact problem, and provide evidence showing what the change fixes.
 
@@ -434,7 +427,7 @@ untested generated changes may be closed without review.
 KytyPS5 is licensed under the [GNU General Public License version 2](LICENSE)
 (`GPL-2.0-only`).
 
-This project is based on the original [Kyty](https://github.com/InoriRus/Kyty), which was released
+KytyPS5 is based on the original [Kyty](https://github.com/InoriRus/Kyty), which was released
 under the MIT License. Kyty's original copyright and license notice are preserved in
 [`LICENSES/Kyty-MIT.txt`](LICENSES/Kyty-MIT.txt). Third-party components remain subject to the
 licenses included with those components.
