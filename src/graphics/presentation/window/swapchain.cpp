@@ -318,7 +318,7 @@ struct Presenter::Impl {
 	      present_scheduler(renderer, owner.graphic_ctx), frames(owner, present_scheduler) {
 		EXIT_IF(owner.render_context == nullptr);
 		swapchain.Create();
-		frames.Initialize(swapchain.ImageCount(), swapchain.Format());
+		frames.Initialize(16u, swapchain.Format());
 	}
 
 	void RecoverSwapchain(Swapchain::Status status) {
